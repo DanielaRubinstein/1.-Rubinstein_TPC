@@ -55,10 +55,9 @@ namespace Presentacion
 
         private void btnProveedor_Click(object sender, EventArgs e)
         {
-            frmProveedor VentanaProveedor = new frmProveedor();
+            frmListaProveedor VentanaProveedor = new frmListaProveedor();
             VentanaProveedor.ShowDialog();
             this.Close();
-
         }
     }
 }

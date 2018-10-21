@@ -25,11 +25,6 @@ namespace Presentacion
             
 
         }
-        private void dgvProductos_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
 
         private void btnVerProducto_Click(object sender, EventArgs e)
         {

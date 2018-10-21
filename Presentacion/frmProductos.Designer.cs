@@ -51,7 +51,6 @@
             this.dgvProductos.RowTemplate.Height = 33;
             this.dgvProductos.Size = new System.Drawing.Size(1134, 283);
             this.dgvProductos.TabIndex = 1;
-            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick_1);
             // 
             // frmProductos
             // 

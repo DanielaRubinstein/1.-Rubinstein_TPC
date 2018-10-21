@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Dominio;
 using System.Data.SqlClient;
 
+
+//metodo individual para el acceso de datos
 namespace Negocio
 {
     public class ProductNegocio
@@ -31,7 +33,7 @@ namespace Negocio
                 while (lector.Read())
                 {
                     aux = new Producto();
-                    aux.IdProducto = (int) lector["IdProducto"];
+                    aux.IdBien = (int) lector["IdProducto"];
                     aux.Descripcion = lector.GetString(1);
                     //aux.Tamanio = lector.GetString(2);
                     //Tamanio,PrecioUnitario,Stock,FechaVenc

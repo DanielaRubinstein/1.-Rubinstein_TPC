@@ -42,6 +42,7 @@
             this.cmboxTelefono = new System.Windows.Forms.ComboBox();
             this.txtboxMail = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAceptar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblIdProveedor
@@ -193,12 +194,22 @@
             this.textBox1.Size = new System.Drawing.Size(763, 47);
             this.textBox1.TabIndex = 16;
             // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Location = new System.Drawing.Point(731, 598);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.Size = new System.Drawing.Size(246, 52);
+            this.btnAceptar.TabIndex = 17;
+            this.btnAceptar.Text = "Aceptar";
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            // 
             // frmProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1042, 687);
+            this.ClientSize = new System.Drawing.Size(1120, 696);
+            this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtboxMail);
             this.Controls.Add(this.cmboxTelefono);
@@ -239,5 +250,6 @@
         private System.Windows.Forms.ComboBox cmboxTelefono;
         private System.Windows.Forms.TextBox txtboxMail;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAceptar;
     }
 }

@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class Proveedor
+    public class Proveedor : Contacto
     {
-        public int IdPersona { get; set; }
-        public int Cuit { get; set; }
+        public int CUIT { get; set; }
         public string RazonSocial { get; set; }
-        public string Direccion { get; set; }
-        public string Localidad { get; set; }
-        public Telefono Telefono { get; set; }
-        public string Mail { get; set; }
+
+        public override string ToString()
+        {
+            return RazonSocial + "(" + CUIT.ToString() + ")";
+        }
 
     }
 }

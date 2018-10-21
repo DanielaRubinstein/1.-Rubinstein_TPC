@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Dominio
 {
-    class DetalleFactura
+    public class DetalleFactura
     {
         public int IdDetalle { get; set; }
         public int IdFactura { get; }
-        public int IdProducto { get;}//poner objeto produ
-        public string DescripcionProd { get; }//descrip del producto
+        public Producto producto { get; set; }
         public int Cantidad { get; set; }
-        public float PrecioUnitario { get; }
         public float PrecioTotal { get; set; }
         public int Descuento { get; set; } //puede ser porcentaje o entero 
 
@@ -23,9 +21,9 @@ namespace Dominio
         {
             IdDetalle = idDetalle;
             IdFactura = idFactura;
-            IdProducto = idProducto;
-            DescripcionProd = descripcionProd;
-            PrecioUnitario = precioUnitario;
+            producto.IdBien = idProducto;
+            producto.Descripcion = descripcionProd;
+            producto.Precio = precioUnitario;
             PrecioTotal = precioUnitario * Cantidad;
         }
 
