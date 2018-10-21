@@ -20,5 +20,10 @@ namespace Dominio
             Tel = telefono;
         }
 
+        public override string ToString()
+        {
+            return  Tel + ", " + TipoTel;
+        }
+
     }
 }

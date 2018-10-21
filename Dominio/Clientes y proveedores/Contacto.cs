@@ -13,6 +13,11 @@ namespace Dominio
         public List<Telefono> Telefono { get; set; }
         public string Mail { get; set; }
 
+        public override string ToString()
+        {
+            return IdContacto + " " + direccion + ", " + Telefono + ", " + Mail;
+        }
+
 
 
 
