@@ -38,7 +38,6 @@ namespace Negocio
                     conexion.cerrarConexion();
             }
 
-
         }
 
     }
