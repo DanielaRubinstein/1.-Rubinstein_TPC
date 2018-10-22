@@ -25,7 +25,6 @@ namespace Negocio
                 {
                     aux = new Proveedor();
                     aux.IdContacto = (int)conexion.Lector["IdContacto"];
-
                 }
                 return lista;
             }
