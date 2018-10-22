@@ -129,7 +129,6 @@
             this.btnVerProveedor.TabIndex = 3;
             this.btnVerProveedor.Text = "Ver Proveedores";
             this.btnVerProveedor.UseVisualStyleBackColor = true;
-            this.btnVerProveedor.Click += new System.EventHandler(this.btnVerProveedor_Click);
             // 
             // frmListaProveedor
             // 
