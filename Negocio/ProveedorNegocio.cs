@@ -11,6 +11,7 @@ namespace Negocio
     {
         public IList<Proveedor> listar()
         {
+
             AccesoDatos conexion = null;
             List<Proveedor> lista = new List<Proveedor>();
             Proveedor aux;
