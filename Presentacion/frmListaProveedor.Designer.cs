@@ -77,7 +77,7 @@
             this.dgvProveedores.RowTemplate.Height = 33;
             this.dgvProveedores.Size = new System.Drawing.Size(1380, 361);
             this.dgvProveedores.TabIndex = 2;
-          
+            // 
             // IdProveedor
             // 
             this.IdProveedor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -129,6 +129,7 @@
             this.btnVerProveedor.TabIndex = 3;
             this.btnVerProveedor.Text = "Ver Proveedores";
             this.btnVerProveedor.UseVisualStyleBackColor = true;
+            this.btnVerProveedor.Click += new System.EventHandler(this.btnVerProveedor_Click);
             // 
             // frmListaProveedor
             // 
