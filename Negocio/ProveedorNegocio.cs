@@ -14,18 +14,23 @@ namespace Negocio
 
             AccesoDatos conexion = null;
             List<Proveedor> lista = new List<Proveedor>();
-            Proveedor aux;
+            Proveedor proveedor;
             try
             {
                 conexion = new AccesoDatos();
-                conexion.SetearConsulta("select IdContacto, CUIT, RazonSocial, direccion, localidad, Mail, Telefono");
+                conexion.SetearConsulta("select IdProveedor, CUIT, RazonSocial, direccion, localidad, Mail, Telefono from Proveedor");
                 conexion.abrirConexion();
                 conexion.ejecutarConsulta();
 
                 while (conexion.Lector.Read())
                 {
-                    aux = new Proveedor();
-                    aux.IdContacto = (int)conexion.Lector["IdContacto"];
+                    proveedor = new Proveedor();
+                    proveedor.direccion = new Direccion();
+                    //proveedor.telefono.Tel = new Telefono(); es una lista
+                    proveedor.IdProveedor = (int)conexion.Lector["IdProveedor"];
+                    proveedor.CUIT = (int)conexion.Lector["CUIT"];
+                    proveedor.direccion.Calle = (string)conexion.Lector["Calle"];
+
                 }
                 return lista;
             }

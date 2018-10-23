@@ -44,7 +44,7 @@ CP int not null foreign key references Localidad (CP),
 
 go
 create table Proveedor(
-IdContacto int not null primary key,
+IdProveedor int not null primary key,
 IdDireccion int not null foreign key references Direccion(Iddireccion),
 Telefono int not null foreign key references Telefono(IdTelefono),
 Mail varchar(30) not null,
@@ -54,7 +54,7 @@ RazonSocial varchar (50)not null
 
 go
 create table Cliente(
-IdContacto int not null primary key,
+IdCliente int not null primary key,
 IdDireccion int not null foreign key references Direccion(Iddireccion),
 Telefono int not null foreign key references Telefono(IdTelefono),
 Mail varchar(30) not null,
@@ -137,8 +137,8 @@ insert into Direccion(IdDireccion,Calle,NroCalle,Dpto,CP) values (2,'Av. Mitre',
 insert into Direccion(IdDireccion,Calle,NroCalle,Dpto,CP) values (3,'Pucara',1699,'PB',5)
 
 --DATOS PROVEEDORES
-insert into Proveedor(IdContacto,CUIT,RazonSocial,IdDireccion,Mail,Telefono) values(1,'27-33446789-0','Osle',1,'osle@gmail.com',10)
-insert into Proveedor(IdContacto,CUIT,RazonSocial,IdDireccion,Mail,Telefono) values(2,'27-33446888-0','Materia Prima',1,'materiaprima@gmail.com',11)
+insert into Proveedor(IdProveedor,CUIT,RazonSocial,IdDireccion,Mail,Telefono) values(1,'27-33446789-0','Osle',1,'osle@gmail.com',10)
+insert into Proveedor(IdProveedor,CUIT,RazonSocial,IdDireccion,Mail,Telefono) values(2,'27-33446888-0','Materia Prima',1,'materiaprima@gmail.com',11)
 
 --DATOS CLIENTES
 

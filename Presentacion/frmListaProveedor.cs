@@ -33,8 +33,10 @@ namespace Presentacion
             {
                 listaProveedores = (List<Proveedor>)provNeg.listar();
                 dgvProveedores.DataSource = listaProveedores;
-                dgvProveedores.Columns[0].Visible = true;
-                //dgvProveedores.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dgvProveedores.Columns[0].Visible = false;
+                dgvProveedores.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+                dgvProveedores.Columns[2].Visible = true;
+               
             }
             catch (Exception ex)
             {
