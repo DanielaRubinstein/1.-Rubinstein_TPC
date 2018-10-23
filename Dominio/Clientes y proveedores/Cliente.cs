@@ -18,7 +18,7 @@ namespace Dominio
 
         public override string ToString()
         {
-            return IdContacto + " " + direccion + ", " + Telefono + ", " + Mail;
+            return IdCliente + " " + direccion + ", " + Telefono + ", " + Mail;
         }
 
 

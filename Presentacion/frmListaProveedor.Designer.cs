@@ -143,7 +143,6 @@
             this.IsMdiContainer = true;
             this.Name = "frmListaProveedor";
             this.Text = "Lista proveedores";
-            this.Load += new System.EventHandler(this.frmListaProveedor_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).EndInit();
             this.ResumeLayout(false);
 

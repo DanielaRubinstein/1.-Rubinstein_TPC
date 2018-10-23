@@ -18,19 +18,19 @@ namespace Negocio
             try
             {
                 conexion = new AccesoDatos();
-                conexion.SetearConsulta("select IdProveedor, CUIT, RazonSocial, direccion, localidad, Mail, Telefono from Proveedor");
+                conexion.SetearConsulta("select IdProveedor from Proveedor");
                 conexion.abrirConexion();
                 conexion.ejecutarConsulta();
 
                 while (conexion.Lector.Read())
                 {
                     proveedor = new Proveedor();
-                    proveedor.direccion = new Direccion();
+                    //proveedor.direccion = new Direccion();
                     //proveedor.telefono.Tel = new Telefono(); es una lista
                     proveedor.IdProveedor = (int)conexion.Lector["IdProveedor"];
-                    proveedor.CUIT = (int)conexion.Lector["CUIT"];
-                    proveedor.direccion.Calle = (string)conexion.Lector["Calle"];
-
+                    //proveedor.CUIT = (int)conexion.Lector["CUIT"];
+                    //proveedor.direccion.Calle = (string)conexion.Lector["Calle"];
+                    lista.Add(proveedor);
                 }
                 return lista;
             }
