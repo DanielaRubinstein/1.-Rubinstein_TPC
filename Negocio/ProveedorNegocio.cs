@@ -9,7 +9,7 @@ namespace Negocio
 {
     public class ProveedorNegocio
     {
-        public IList<Proveedor> listar()
+       public IList<Proveedor> listar()
         {
 
             AccesoDatos conexion = null;
