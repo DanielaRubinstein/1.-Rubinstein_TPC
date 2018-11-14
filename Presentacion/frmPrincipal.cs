@@ -36,7 +36,9 @@ namespace Presentacion
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-
+            frmListaCliente ventanaCliente = new frmListaCliente();
+            ventanaCliente.ShowDialog();
+            this.Close();
         }
 
         private void btnProductos_Click(object sender, EventArgs e)

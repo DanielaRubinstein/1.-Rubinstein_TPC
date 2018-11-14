@@ -9,16 +9,17 @@ namespace Dominio
     public class Proveedor
     {
         public int IdProveedor { get; set; }
-        public Direccion direccion { get; set; }
-        public List<Telefono> telefono { get; set; }
-        public string mail { get; set; }
-        public int CUIT { get; set; }
         public string RazonSocial { get; set; }
-
+        public string CUIT { get; set; }
+        public string Mail { get; set; }
+        public string Telefono { get; set; }
+        public string Celular { get; set; }
+        public string direccion { get; set; }
+        public int Estado { get; set; }
 
         public override string ToString()
         {
-            return IdProveedor +" " + direccion + ", " + telefono + ", " + mail + ", " + RazonSocial + "(" + CUIT.ToString() + ")";
+            return IdProveedor + " ," + RazonSocial + ", " + CUIT + ", " + Mail +", "+ Telefono +", " + ", " + Celular+ ","+direccion+","+1;
         }
 
     }

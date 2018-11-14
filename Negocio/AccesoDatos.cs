@@ -24,7 +24,7 @@ namespace Negocio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection(@"inicial catalog=Rubinstein_DB;data source=DESKTOP-3LK2VR8\SQLEXPRESS;integrated security=sspi");
+            conexion = new SqlConnection(@"initial catalog=Rubinstein_DB;data source=DESKTOP-3LK2VR8\SQLEXPRESS;integrated security=sspi");
         }
        
         public void SetearConsulta(string consulta)

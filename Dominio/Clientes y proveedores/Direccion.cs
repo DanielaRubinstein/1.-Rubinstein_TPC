@@ -18,6 +18,7 @@ namespace Dominio
         {
             return Calle + " " + NroCalle.ToString() + ", " + Dpto.ToString() + ", " + Localidad + ", " + Provincia;
         }
+
     }
 
 
